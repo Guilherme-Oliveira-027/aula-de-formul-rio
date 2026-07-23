@@ -1,11 +1,90 @@
-body{
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&display=swap');
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
-h1{
+
+/* Estilização do Fundo e Fonte do site */
+body { 
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #79cadf; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: #06880c9d; /* Verde semitransparente */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
     border-bottom: 2px solid #333;
     margin-bottom: 12px;
     padding-bottom: 8px;
+}
+
+/* Área principal e espaçamento dos blocos de perguntas */
+main {
+    padding: 20px;
+    max-width: 800px; /* Evitar que o conteúdo estique demais em telas grandes */
+    margin: 0 auto;   /* Centralizar o conteúdo na tela */
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra leve nos cards */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos textos e espaçamento das opções */
+p {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-left: 5px; /* Dá um espacinho entre a bolinha do radio e o texto */
+    cursor: pointer;
+}
+
+.caixa-comentario {
+    resize: none;         /* ESSA LINHA DIZ AO NAVEGADOR PARA NÃO DEIXAR ARRASTAR */
+    width: 100%;          /* Ocupa toda a largura do card */
+    height: 120px;         /* Altura fixa definida por você */
+    padding: 10px;        /* Espaço para o texto não colar nas bordas */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit; /* Faz o texto de dentro usar a mesma fonte do site */
+}
+
+/* Botão de Enviar no final do formulário */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%; /* Faz o botão ocupar a largura total para ficar moderno */
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Cor um pouco mais escura ao passar o mouse */
 }
